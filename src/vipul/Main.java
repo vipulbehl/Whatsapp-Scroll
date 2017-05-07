@@ -5,6 +5,7 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.WindowConstants;
 
 public class Main {
 	private static boolean clicked = false;
@@ -14,6 +15,7 @@ public class Main {
 		frame.setSize(200, 200);
 		frame.setVisible(true);
 		frame.setLayout(null);
+		frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		
 		JButton button = new JButton("Start");
 		button.setBounds(50, 60, 100, 50);
